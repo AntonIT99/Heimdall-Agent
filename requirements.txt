@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+mcrcon
+python-dotenv
+psutil
+pydantic

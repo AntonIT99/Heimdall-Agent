@@ -1,0 +1,17 @@
+{
+  "host": "0.0.0.0",
+  "port": 9090,
+  "minecraft": {
+    "rcon_host": "127.0.0.1",
+    "rcon_port": 25575,
+    "rcon_password": "CHANGE_ME",
+    "server_port": 25565
+  },
+  "instances": {
+    "example": {
+      "name": "Example Server",
+      "start_script": "C:\\Path\\To\\start.bat",
+      "working_dir": "C:\\Path\\To\\Server"
+    }
+  }
+}
