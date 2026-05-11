@@ -16,3 +16,5 @@ state.json
 # OS
 .DS_Store
 Thumbs.db
+
+active-instance.txt
