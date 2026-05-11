@@ -7,6 +7,7 @@ venv/
 # Secrets / local config
 config.json
 .env
+state.json
 
 # IDE
 .idea/
