@@ -134,8 +134,8 @@ def send_rcon(command: str) -> str:
         host=mc["rcon_host"],
         password=mc["rcon_password"],
         port=int(mc["rcon_port"]),
-    ) as rcon:
-        response = rcon.command(command)
+    ) as rcon_connection:
+        response = rcon_connection.command(command)
 
     return response
 
@@ -286,7 +286,7 @@ def rcon(
 
 @app.get("/logs", responses=UNAUTHORIZED_RESPONSE)
 def logs(
-    lines: int = Query(default=50),
+    lines: Annotated[int, Query()] = 50,
     authorization: AuthHeader = None,
 ) -> JsonObject:
     require_auth(authorization)
